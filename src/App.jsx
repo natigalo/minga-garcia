@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import imagen from "./assets/images/Images + Rectangle.svg";
-
+import imagenMain from "./assets/images/Images + Rectangle.svg";
+import logo from "./assets/images/Logo.png"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,11 +8,15 @@ function App() {
   return (
     <>
       <nav>
-
+<img className='absolute   right-12 top-12 h-16' src={logo} alt="logo" />
       </nav>
       <main>
-        <div className='w-100'>
-          <img className='bg-cover' src={imagen} alt=""/>
+        <div className='bg-blue-200 '>
+          <img className='w-full p-0' src={imagenMain} alt="cards manga"/>
+          <div className='d-flex'>For the love of manga
+Explore our varieties
+#MingaLove❤
+</div>
         </div>
       </main>
       <footer></footer>
