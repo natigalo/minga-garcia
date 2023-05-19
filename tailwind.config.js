@@ -5,8 +5,16 @@ module.exports = {
       './src/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-      extend: {}
+      extend: {},
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+    
+          'poppins': 'Poppins',
+          'montserrat': 'Montserrat',
+        
+      }
   },
   variants: {},
   plugins: []
+  
 }
