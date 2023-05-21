@@ -2,19 +2,18 @@
 module.exports = {
   mode: 'jit',
   purge: [
-      './src/**/*.{js,jsx,ts,tsx}'
+    './src/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-      extend: {},
-      fontFamily: {
-        'roboto': ['Roboto', 'sans-serif'],
+    extend: {},
+    fontFamily: {
+      'roboto': ['Roboto', 'sans-serif'],
+      'poppins': 'Poppins',
+      'montserrat': 'Montserrat'
+    },
     
-          'poppins': 'Poppins',
-          'montserrat': 'Montserrat',
-        
-      }
   },
   variants: {},
   plugins: []
-  
+
 }
