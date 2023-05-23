@@ -51,11 +51,11 @@ hol
         <footer >
 
           <div className=" relative flex bg-gray-100 w-full ">
-            <img className=' w-full h-screen ' src={footer} alt="" />
-            <img className='absolute h-screen ' src={wave_white} alt="" />
+            <img className=' w-full h-full ' src={footer} alt="" />
+            <img className='absolute h-full mt-4' src={wave_white} alt="" />
           </div>
 
-          <div className='flex w-full flex-col md:flex-row h-[300px] justify-between items-center'>
+          <div className='flex w-full flex-col md:flex-row h-[300px] mx-0 justify-between items-center'>
             <div>
 
             </div>
