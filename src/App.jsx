@@ -3,6 +3,10 @@ import imagenMain from "./assets/images/background.svg"
 import logo from "./assets/images/Logo.png"
 import menu from "./assets/images/menu.svg"
 import stars from "./assets/images/pngwing.com.png"
+import person from "./assets/images/personaje.png"
+import card from "./assets/images/card.png"
+import buttonleft from "./assets/images/vectorLeft.png"
+import buttonRight from "./assets/images/vectorRight.png"
 import footer from "./assets/images/footer.svg"
 import wave from "./assets/images/wave.png"
 import logom from "./assets/images/logom.png"
@@ -39,13 +43,22 @@ function App() {
             <button className='hidden lg:inline rounded-md py-[20px] px-[140px] bg-[#4338CA] text-white font-bold text-[24px] mt-8  shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75'>Let's go!</button>
           </div>
 
-          <div className='bg-white lg:mt-[14%] absolute w-screen h-[380px]' >
-            <div className='h-[265px] w-80 bg-[#4338CA] '>
-
-hol
+          <div className='hidden lg:inline-flex bg-white mt-[14%]  justify-center items-center w-full h-[380px]' >
+            
+            <div className='h-[265px] w-[80%] flex justify-between items-center rounded-md bg-[#4338CA]'>
+              <div className='ps-3'><img src={buttonleft} alt="" /></div>
+              <div className=' mb-10  flex '><img className='w-[276px] h-[306px]' src={person} alt="person" /><img className='w-[180px] h-[270px]' src={card} alt="" /></div>
+              <div className=" text-white w-[35%] h-[93px]  ">
+                <div className='font-bold text-2xl font-roboto' >Shonen:</div>
+                <div className='font-roboto text-sm  '>Is the manga that is aimed at adolescent boys. 
+                  They are series with large amounts of action, 
+                  in which humorous situations often occur. 
+                  The camaraderie between members of a collective or a combat team stands out.</div>
+                </div>
+                <div className='pr-3'><img src={buttonRight} alt="" /></div>
             </div>
           </div>
-
+hola
         </main>
 
         <footer >
@@ -93,3 +106,23 @@ hol
 }
 
 export default App
+/* 
+<div className="hidden lg:inline-flex lg:mt-[19%] h-[380px] bg-white w-full items-center justify-center">
+            <div className="bg-purple flex  w-[90%] h-[265px] relative items-center justify-between rounded-md">
+              <img src={left} className="ps-3" alt="" />
+
+              <img src={footer1} className="w-[276px] h-[306px] mb-12" alt="" />
+              <img src={footer2} className="w-[180px] h-[270px] mb-12" alt="" />
+
+              <div className="text-white w-[25%] h-[93px] flex flex-col justify-center">
+                <h1 className="font-bold text-2xl font-roboto">Shonen:</h1>
+                <p className="font-roboto text-sm">
+                  Is the manga that is aimed at adolescent boys. They are series
+                  with large amounts of action, in which humorous situations
+                  often occur. The camaraderie between members of a collective
+                  or a combat team stands out.
+                </p>
+              </div>
+              <img src={right} className="pr-3" alt="" />
+            </div>
+          </div> */
