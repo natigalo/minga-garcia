@@ -78,7 +78,7 @@ function App() {
               
                 <img className='w-40 h-18 items-center justify-content' src={logom} alt="logo" />
                 
-              <div className='w-[20%]  flex flex-col'>
+              <div className='w-[40%] lg:w-[20%] flex flex-col'>
                 <div className=' mb-2 flex justify-between '>
                   <img src={facebook} alt="logo facebook" />
                   <img src={twitter} alt="logo twitter" />
