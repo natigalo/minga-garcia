@@ -64,8 +64,8 @@ function App() {
         <footer className='w-[100%] relative flex-col flex bg-white '>
 
 
-          <img className=' w-screen h-full ' src={wave} alt="" />
-          <img className='absolute  mt-[10%]' src={wave_white} alt="" />
+          <img className=' hidden lg:inline w-screen h-full ' src={wave} alt="" />
+          <img className='hidden lg:inline absolute  mt-[10%]' src={wave_white} alt="" />
 
 
           <div className=' relative  flex flex-col justify-around'>
