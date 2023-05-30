@@ -1,5 +1,5 @@
-import logo from "./assets/images/Logo.png"
-import menu from "./assets/images/menu.svg"
+import logo from "/assets/images/Logo.png"
+import menu from "/assets/images/menu.svg"
 
 export default function Navbar() {
   return (

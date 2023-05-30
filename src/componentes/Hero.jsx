@@ -1,9 +1,8 @@
-import stars from "./assets/images/pngwing.com.png"
+import stars from "/assets/images/pngwing.com.png"
 
 export default function Hero() {
   return (
-    <main className='absolute lg:relative w-screen' >
-          <div className='flex flex-col lg:mt-[30%] mt-[60%] items-center justify-center text-white font-roboto text-center px-4' >
+    <div className='flex flex-col lg:mt-[30%] mt-[60%] items-center justify-center text-white font-roboto text-center px-4' >
 
             <div className='text-[35px] md:text-[40px] font-bold '>Your favorite comic book store <img className='w-8 hidden md:inline' src={stars} alt="" /> </div>
 
@@ -12,9 +11,5 @@ export default function Hero() {
             <button className='lg:hidden py-[18px] px-[130px] bg-gradient-to-r from-indigo-700 to-indigo-500 text-white font-bold text-[24px] mt-8  rounded-[120px] shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75'>Started</button>
             <button className='hidden lg:inline rounded-md py-[20px] px-[140px] bg-gradient-to-r from-indigo-700 to-indigo-500  text-white font-bold text-[24px] mt-8  shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75'>Let's go!</button>
           </div>
-
-          <Carousel/>
-
-        </main>
   )
 }
