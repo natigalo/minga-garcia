@@ -15,16 +15,22 @@ export default function Carousel({character_photo, cover_photo, name, descriptio
   const [counter, setCounter]= useState(0)
   const right= ()=>{
     setCounter(counter+1);
+    if (counter==categories.length-1) {
+      setCounter(0)
+    }
     console.log(counter);
   }
   const left= ()=>{
     setCounter(counter-1);
+    if (counter==0) {
+      setCounter(categories.length-1)
+    }
     console.log(counter);
   }
   return (
         <div className='hidden lg:inline-flex bg-white mt-[15%]  justify-center items-center w-full h-[380px]' >
 
-        <div className='h-[265px] w-[80%] flex justify-between items-center rounded-md bg-gradient-to-r from-indigo-700 to-indigo-500'>
+        <div className='h-[265px] w-[80%] flex justify-between items-center rounded-md ' style={{background:categories[counter]?.color}}>
           <div className='ps-3'><img onClick={left} src={buttonleft} alt="" /></div>
           <div className=' mb-10  flex '><img className='w-[276px] h-[306px]' src={categories[counter]?.character_photo} alt="person" /><img className='w-[180px] h-[270px]' src={categories[counter]?.cover_photo} alt="" /></div>
           <div className=" text-white w-[35%] h-[93px]">
