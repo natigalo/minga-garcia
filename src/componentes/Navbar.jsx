@@ -13,7 +13,7 @@ export default function Navbar() {
     <>
       {show && <Display show={show} setShow={setShow} options={options} />}
       <nav className='absolute z-10 flex justify-between w-full top-3 px-5'>
-        <img className='  w-9  ' onClick={() => setShow(!show)} src={menu} alt="menu" />
+        <img className='  w-9 cursor-pointer  ' onClick={() => setShow(!show)} src={menu} alt="menu" />
         <img className=' w-9  ' src={logo} alt="logo" />
       </nav>
     </>
