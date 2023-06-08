@@ -14,8 +14,8 @@ function App() {
 
   return (
     <>
-      <div className='relative flex flex-col items-center w-full h-full' >
-        <img className='w-full h-[100%] lg:object-cover lg:object-top lg:absolute p-0' src={imagenMain} alt="image" />
+      <div className=' flex flex-col items-center w-full h-full' >
+       {/*  <img className='w-full h-[100%] lg:object-cover lg:object-top lg:absolute p-0' src={imagenMain} alt="image" /> */}
         <Main>
         <Index data={data} />
         </Main>
