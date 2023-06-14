@@ -5,9 +5,9 @@ import { useState } from "react"
 
 export default function Navbar() {
   let options = [
-    { tittle: 'Home' },
-    { tittle: 'Register' },
-    { tittle: 'Sign In' }]
+    { to: '/', title: 'Home' },
+    { to: '/register', title: 'Register'},
+    { to: '/signin', title: 'Sign In'}] 
   const [show, setShow] = useState(false)
   return (
     <>
