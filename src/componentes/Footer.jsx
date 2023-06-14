@@ -10,7 +10,7 @@ import line from "/assets/images/line.png"
 
 export default function Footer() {
     return (
-        <footer className='w-[100%] relative flex-col flex bg-white '>
+        <footer className='w-[100%] md:relative flex-col flex bg-white '>
 
             <img className=' hidden lg:inline w-screen h-full ' src={wave} alt="" />
             <img className='hidden lg:inline absolute  mt-[10%]' src={wave_white} alt="" />
